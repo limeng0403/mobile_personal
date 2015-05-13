@@ -61,6 +61,6 @@ $(function() {
 		}
 	});
 	
-	$('#menuBtn').click();
-	$('.menu li').eq(2).find('a').click();
+	//$('#menuBtn').click();
+	//$('.menu li').eq(2).find('a').click();
 });
