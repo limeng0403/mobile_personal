@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+	<link href="css/bootstrap-switch.min.css" rel="stylesheet" />
     <title>首页</title>
   </head>
   <body>
@@ -100,26 +101,26 @@
               </div>
             </div>
 			<div class="row">
-				<div class="col-xs-4" style="height: 150px;background: #eee;"></div>
-				<div class="col-xs-8" style="padding: 0;">
-					<div class="col-xs-12" style="height: 50px;background: #ddd;"></div>
-					<div class="col-xs-6" style="height: 100px;background: #ccc;"></div>
-					<div class="col-xs-6" style="height: 100px;background: #bbb;"></div>
+				<div class="col-xs-4 h150 bgeee"></div>
+				<div class="col-xs-8 padding0">
+					<div class="col-xs-12 h50 bgddd"></div>
+					<div class="col-xs-6 h100 bgccc"></div>
+					<div class="col-xs-6 h100 bgbbb"></div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-8" style="padding: 0;">
-					<div class="col-xs-12" style="height: 50px;background: #ddd;"></div>
-					<div class="col-xs-6" style="height: 100px;background: #ccc;"></div>
-					<div class="col-xs-6" style="height: 100px;background: #bbb;"></div>
+					<div class="col-xs-12 h50 bgddd"></div>
+					<div class="col-xs-6 h100 bgccc"></div>
+					<div class="col-xs-6 h100 bgbbb"></div>
 				</div>
-				<div class="col-xs-4" style="height: 150px;background: #eee;"></div>
+				<div class="col-xs-4 h150 bgeee"></div>
 			</div>
           </div>
           <div role="tabpanel" class="tab-pane" id="me">
-			<div class="row" style="padding: 0 15px;">
-				<div class="col-xs-12 text-center" style="height: 100px;background: url(img/my_bg.jpg) no-repeat 50% 50%;">
-					<img id="face" src="img/face.jpg" style="width: 64px;height: 64px;border-radius: 32px;box-shadow: 0 0 8px #ccc;margin-top: 48px;" />
+			<div class="row padding015">
+				<div class="col-xs-12 text-center face-wrapper">
+					<img id="face" class="face" src="img/face.jpg" />
 				</div>
 			</div>
 			<div class="row">
@@ -182,7 +183,29 @@
 			  </div>
 			</form>
 		  </div>
-          <div role="tabpanel" class="tab-pane" id="settings">settings</div>
+          <div role="tabpanel" class="tab-pane settings" id="settings">
+			<form>
+			  <div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+			  </div>
+			  <div class="form-group">
+				<label for="fullName">Full name</label>
+				<input type="text" class="form-control" id="fullName" placeholder="full name">
+			  </div>
+			  <div class="form-group">
+				<p><label>Gender</label></p>
+				<input type="radio" name="gender" checked /> male
+				<input type="radio" name="gender" /> female
+			  </div>
+			  <p style="height: 32px;">
+				<input id="gender" data-on-text="Yes" data-off-text="No" class="switch" type="checkbox" checked /> 
+			  </p>
+			  <p class="text-center">
+				<button type="submit" class="btn btn-default">Submit</button>
+			  <p>
+			</form>
+		  </div>
         </div>
       </div>
     </div>
@@ -190,5 +213,7 @@
   <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script> 
   <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
   <script src="js/unslider.min.js"></script> 
-  <script src="js/index.js"></script></body>
+  <script src="js/bootstrap-switch.min.js"></script> 
+  <script src="js/index.js"></script>
+  </body>
 </html>

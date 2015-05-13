@@ -61,6 +61,8 @@ $(function() {
 		}
 	});
 	
+	$(".switch").bootstrapSwitch();
+	
 	//$('#menuBtn').click();
-	//$('.menu li').eq(2).find('a').click();
+	//$('.menu li').eq(3).find('a').click();
 });

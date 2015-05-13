@@ -128,3 +128,44 @@ html,body{
 	margin:0;
 	padding:0;
 }
+.face-wrapper{
+	height: 100px;
+	background: url(../img/my_bg.jpg) no-repeat 50% 50%;
+}
+.face{
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	box-shadow: 0 0 8px #ccc;
+	margin-top: 48px;
+}
+.settings{
+	padding: 0 5px;
+}
+.padding0{
+	padding: 0;
+}
+.padding015{
+	padding: 0 15px;
+}
+.h50{
+	height: 50px;
+}
+.h150{
+	height: 150px;
+}
+.h100{
+	height: 100px;
+}
+.bgeee{
+	background: #eee;
+}
+.bgddd{
+	background: #ddd;
+}
+.bgccc{
+	background: #ccc;
+}
+.bgbbb{
+	background: #bbb;
+}
