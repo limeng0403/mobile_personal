@@ -21,22 +21,23 @@ html,body{
 }
 .menu li{
 	width: 100%;
-	height: 38px;
+	height: 48px;
 }
 .nav-tabs{
 	border: none;
 }
 .menu li.active{
-	background: #337ab7;
+	background: #ccc;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
 	border: none;
 	background: none;
-	color: #fefefe;
+	color: #333;
 }
 .nav-tabs>li>a{
 	border: none;
 	background: none;
+	line-height: 2;
 }
 .header{
 	position: relative;
@@ -109,4 +110,21 @@ html,body{
 .banner .dots li.active {
 	background: #fff;
 	opacity: 1;
+}
+.man-info th,.man-info td{
+	font-size: 12px;
+}
+.message-content span{
+	margin: 10px 2px;
+}
+#messages .form-inline{
+	position: fixed;
+	left:0;
+	bottom:0;
+	margin:0;
+	padding:0;
+}
+#messages .form-group{
+	margin:0;
+	padding:0;
 }

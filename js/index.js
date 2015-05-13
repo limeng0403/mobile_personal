@@ -24,6 +24,24 @@ function showMenu(obj){
 	}
 }
 
+function enterMe(){
+	var count=0;
+	var base=8;
+	
+	var time=setInterval(function(){
+		$('#face').css({
+			'box-shadow': '0 0 '+count*base+'px #ccc'
+		});
+		if(++count>=5){
+			clearInterval(time);
+			
+			$('#face').css({
+				'box-shadow': '0 0 8px #ccc'
+			});
+		}
+	},500);
+}
+
 
 $(function() {
     $('.banner').unslider({
@@ -34,4 +52,15 @@ $(function() {
 		dots: true,               //  Display dot navigation
 		fluid: true              //  Support responsive design. May break non-responsive designs
 	});
+	
+	$('.menu li a').on('click',function(){
+		$('#menuBtn').click();
+		$('#headerTitle').text($(this).text());
+		if($(this).text().indexOf('Me')>=0){
+			enterMe();
+		}
+	});
+	
+	$('#menuBtn').click();
+	$('.menu li').eq(2).find('a').click();
 });
