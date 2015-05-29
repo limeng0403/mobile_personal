@@ -44,15 +44,6 @@ function enterMe(){
 
 
 $(function() {
-    $('.banner').unslider({
-		speed: 500,               //  The speed to animate each slide (in milliseconds)
-		delay: 3000,              //  The delay between slide animations (in milliseconds)
-		complete: function() {},  //  A function that gets called after every slide animation
-		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-		dots: true,               //  Display dot navigation
-		fluid: true              //  Support responsive design. May break non-responsive designs
-	});
-	
 	$('.menu li a').on('click',function(){
 		$('#menuBtn').click();
 		$('#headerTitle').text($(this).text());
@@ -60,9 +51,17 @@ $(function() {
 			enterMe();
 		}
 	});
-	
-	$(".switch").bootstrapSwitch();
-	
-	//$('#menuBtn').click();
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: 3000,
+
+        // If we need pagination
+        pagination: '.swiper-pagination'
+    });
+
+    //$('#menuBtn').click();
 	//$('.menu li').eq(3).find('a').click();
 });
